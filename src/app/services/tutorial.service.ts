@@ -3,7 +3,7 @@ import {HttpClient} from '@angular/common/http';
 import {Book} from '../Model/Book';
 
 
-const baseUrl = 'http://localhost:8080/api/tutorials';
+const baseUrl = 'http://ec2-18-215-122-72.compute-1.amazonaws.com';
 
 @Injectable({
   providedIn: 'root'
