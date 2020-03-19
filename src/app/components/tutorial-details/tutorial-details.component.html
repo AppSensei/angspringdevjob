@@ -1,6 +1,6 @@
 <div *ngIf="currentTutorial" class="edit-form">
   <h4>Tutorial</h4>
-  <form>
+  <form (ngSubmit)="updatePublished(null)" #f="ngForm" >
     <div class="form-group">
       <label for="title">Title</label>
       <input
@@ -31,15 +31,14 @@
   <button
     class="badge badge-primary mr-2"
     *ngIf="currentTutorial.published"
-    (click)="updatePublished(false)"
-  >
+    (click)="updatePublished(false)">
     UnPublish
   </button>
+
   <button
     *ngIf="!currentTutorial.published"
     class="badge badge-primary mr-2"
-    (click)="updatePublished(true)"
-  >
+    (click)="updatePublished(true)">
     Publish
   </button>
 
@@ -47,9 +46,9 @@
     Delete
   </button>
 
-<!--  <button type="submit" class="badge badge-success" (click)="updatePublished()">
+  <button type="submit" class="badge badge-success" (click)="updatePublished(currentTutorial.published)">
     Update
-  </button>-->
+  </button>
   <p>{{ message }}</p>
 </div>
 

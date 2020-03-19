@@ -2,8 +2,13 @@ import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {Book} from '../Model/Book';
 
-
+/*
 const baseUrl = 'http://ec2-18-215-122-72.compute-1.amazonaws.com';
+const baseUrl = 'http://ip-10-138-222-189.ec2.internal';
+*/
+
+const baseUrl = 'http://localhost:8080/api/tutorials';
+
 
 @Injectable({
   providedIn: 'root'

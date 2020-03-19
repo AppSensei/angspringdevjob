@@ -50,6 +50,9 @@ export class TutorialDetailsComponent implements OnInit {
         },
         error => {
           console.log(error);
+        },
+        () => {
+          console.log('Observable Completed');
         });
   }
 
@@ -62,6 +65,9 @@ export class TutorialDetailsComponent implements OnInit {
         },
         error => {
           console.log(error);
+        },
+        () => {
+          console.log('Observable Completed');
         });
   }
 

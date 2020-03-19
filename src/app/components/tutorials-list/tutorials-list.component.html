@@ -22,10 +22,9 @@
     <ul class="list-group">
       <li
         class="list-group-item"
-        *ngFor="let tutorial of tutorials; let i = index"
-        [class.active]="i == currentIndex"
-        (click)="setActiveTutorial(tutorial, i)"
-      >
+        *ngFor="let tutorial of tutorials;
+        let i = index" [class.active]="i == currentIndex"
+        (click)="setActiveTutorial(tutorial, i)">
         {{ tutorial.title }}
       </li>
     </ul>
@@ -35,6 +34,7 @@
     </button>
   </div>
   <div class="col-md-6">
+
     <div *ngIf="currentTutorial">
       <h4>Tutorial</h4>
       <div>

@@ -7,6 +7,9 @@ import {AddTutorialComponent} from './components/add-tutorial/add-tutorial.compo
 
 const routes: Routes = [
   {path: '', redirectTo: 'tutorials', pathMatch: 'full'},
+/*
+  { path: 'tutorials', component: TemplateTutorialComponent },
+*/
   { path: 'tutorials', component: TutorialsListComponent },
   { path: 'tutorials/:id', component: TutorialDetailsComponent },
   { path: 'add', component: AddTutorialComponent }

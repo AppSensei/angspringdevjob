@@ -8,13 +8,15 @@ import {TutorialDetailsComponent} from './components/tutorial-details/tutorial-d
 import {TutorialsListComponent} from './components/tutorials-list/tutorials-list.component';
 import {FormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
+import {TemplateTutorialComponent} from './components/template-tutorial/template-tutorial.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AddTutorialComponent,
     TutorialDetailsComponent,
-    TutorialsListComponent
+    TutorialsListComponent,
+    TemplateTutorialComponent
   ],
   imports: [
     BrowserModule,

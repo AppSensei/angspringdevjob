@@ -37,6 +37,9 @@ export class AddTutorialComponent implements OnInit {
         },
         error => {
           console.log(error);
+        },
+        () => {
+          console.log('Observable Completed');
         });
 
     this.submitted = true;

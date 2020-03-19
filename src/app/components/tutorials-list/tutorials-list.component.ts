@@ -23,17 +23,6 @@ export class TutorialsListComponent implements OnInit {
     this.retrieveTutorial();
   }
 
-  retrieveTutorial() {
-    this.tutorialService.getAll().subscribe(
-        (data: any) => {
-          return this.tutorials = data;
-          console.log(data);
-        },
-        (error: any) => {
-         console.log(error);
-      });
-  }
-
   refreshList() {
     this.retrieveTutorial();
     this.currentTutorial = null;
@@ -45,6 +34,17 @@ export class TutorialsListComponent implements OnInit {
     this.currentIndex = index;
   }
 
+  retrieveTutorial() {
+    this.tutorialService.getAll().subscribe(
+      (data: any) => {
+        return this.tutorials = data;
+        console.log(data);
+      },
+      (error: any) => {
+        console.log(error);
+      });
+  }
+
   removeAllTutorials() {
     this.tutorialService.deleteAll()
       .subscribe(
@@ -54,6 +54,9 @@ export class TutorialsListComponent implements OnInit {
         },
         error => {
           console.log(error);
+        },
+        () => {
+          console.log('Observable Completed');
         });
   }
 
@@ -66,6 +69,9 @@ export class TutorialsListComponent implements OnInit {
         },
         error => {
           console.log(error);
+        },
+        () => {
+          console.log('Observable Completed');
         });
   }
 
