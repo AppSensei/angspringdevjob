@@ -1,0 +1,46 @@
+<form (ngSubmit)="onSubmit(f)" #f="ngForm">
+  <div class="form-group">
+    <label for="formGroupExampleInput">Username</label>
+    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Username"
+           ngModel
+           name="username"
+           required="required">
+  </div>
+  <div class="form-group">
+    <label for="formGroupExampleInput2">Password</label>
+    <input type="text" class="form-control" id="formGroupExampleInput2"
+           name="password"
+           ngModel
+           placeholder="Password">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+           ngModel
+           name="email"
+           placeholder="Email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+           ngModel
+           name="check01"
+           value="Male">
+    <label class="form-check-label" for="inlineCheckbox1">Male</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+           ngModel
+           name="check02"
+           value="Female">
+    <label class="form-check-label" for="inlineCheckbox2">Female</label>
+  </div>
+
+  <div class="form-group">
+    <button type="submit" class="btn btn-primary" type="submit">Submit</button>
+  </div>
+
+</form>
+
+<span></span>
