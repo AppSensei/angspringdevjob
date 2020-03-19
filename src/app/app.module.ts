@@ -6,9 +6,9 @@ import {AppComponent} from './app.component';
 import {AddTutorialComponent} from './components/add-tutorial/add-tutorial.component';
 import {TutorialDetailsComponent} from './components/tutorial-details/tutorial-details.component';
 import {TutorialsListComponent} from './components/tutorials-list/tutorials-list.component';
+import {TemplateTutorialComponent} from './components/template-tutorial/template-tutorial.component';
 import {FormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
-import {TemplateTutorialComponent} from './components/template-tutorial/template-tutorial.component';
 
 @NgModule({
   declarations: [
