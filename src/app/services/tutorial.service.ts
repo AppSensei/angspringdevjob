@@ -7,7 +7,7 @@ const baseUrl = 'http://ec2-18-215-122-72.compute-1.amazonaws.com';
 const baseUrl = 'http://ip-10-138-222-189.ec2.internal';
 */
 
-const baseUrl = 'http://localhost:8080/api/tutorials';
+const baseUrl = 'http://natalia-stores.us-east-1.elasticbeanstalk.com/api/tutorials';
 
 
 @Injectable({
